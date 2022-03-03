@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font);
+}
+
+ :root {
+    --primary: #701e45;
+    --accent: #fff9fc;
+    --gray: #4d4f5c;
+    --font: lato;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: fixed
+}
+
+.all {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-image: url(/images/background.png);
+    background-repeat: no-repeat;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    overflow: hidden;
+    transform: translate(0%, 0%);
+}
+
+.layer {
+    /* width: 81em;
+    height: 90vh; */
+    /* min-width: 91%;
+    min-height: 85%; */
+    position: fixed;
+    margin: 55px;
+    background-color: white;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0, 0);
+    width: 1247px;
+    height: 520px;
+    float: left;
+}
+
+.layer .content {
+    position: fixed;
+    margin: auto;
+    left: 485px;
+    top: 100px;
+    transform: translate(-5%, -5%);
+    float: left;
+}
+
+
+/* Small */
+
+@media (max-width: 992px) {
+    .layer {
+        width: 900px;
+        height: 520px;
+        float: left;
+        transform: translate(-210px, 10px);
+        overflow: hidden;
+        margin-left: 253px;
+    }
+    .layer .content {
+        transform: translate(-182px, -15px);
+    }
+}
+
+
+/* Medium */
+
+@media (max-width: 768px) {
+    .layer {
+        width: 720px;
+        transform: translate(-230px, 10px);
+    }
+    .layer .content {
+        transform: translate(-282px, -15px);
+    }
+}
+
+.logo {
+    position: relative;
+    left: 50px;
+    top: -15px;
+    white-space: nowrap;
+}
+
+.content .paragraph {
+    color: var(--gray);
+    font-family: var(--font);
+    font-size: 18px;
+    margin: 20px;
+    right: 300px;
+}
+
+input[type=text],
+input[type=password] {
+    display: block;
+    position: relative;
+    margin: 25px;
+    padding: 10px;
+    border: none;
+    width: 320px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.616);
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, 0.774);
+}
+
+input[type=text],
+input[type=password]:focus {
+    outline-style: none;
+}
+
+.radio {
+    position: relative;
+    justify-content: space-between;
+    padding-right: 170px;
+}
+
+.checkbox {
+    margin-right: 5px;
+}
+
+.forgetPassword {
+    text-decoration: none;
+    padding-left: 150px;
+    white-space: nowrap;
+}
+
+input[type=submit] {
+    color: white;
+    text-decoration: none;
+    background-color: var(--primary);
+    width: 150px;
+    height: 40px;
+    margin: 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    bottom: 1000px;
+    margin-left: 100px;
+}
+
+.eye-icon {
+    position: absolute;
+    margin-top: -53px;
+    margin-left: 322px;
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.bi-eye {
+    cursor: pointer;
+    color: var(--primary);
+}

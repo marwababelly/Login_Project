@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fontawesome-->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> <!--fa fa-eye-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <!--CSS File-->
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="all">
+        <!--Add Layer-->
+        <div class="layer">
+
+            <div class="content">
+
+                <img class="logo" src="/images/logo.png" alt="">
+
+                <p class="paragraph">Welcom back! Pleace login to your account.</p>
+
+                <form action="" method="post">
+
+                    <input class="in1" type="text" placeholder="Username" name="username" required autofocus>
+
+                    <!-- <div class="pass"> -->
+                    <input class="in2" type="password" name="password" id="password" name="password" placeholder="Password" autocomplete="current-password" required>
+                    <span class="eye-icon">
+                    <i class="bi bi-eye-slash" id="togglePassword" aria-hidden="true"></i>
+                </span>
+                    <!-- </div> -->
+
+                    <div class="radio">
+                        <input class="checkbox" type="checkbox" id="m" name="checkbox">
+                        <label for="m">Remember me </label>
+                        <a class="forgetPassword" href="">Forget Password</a>
+                    </div>
+                    <input class="submit" type="submit" name="submit" value="Login">
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--JS File-->
+    <script src="app.js"></script>
+</body>
+
+</html>
