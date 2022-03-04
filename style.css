@@ -11,7 +11,7 @@
     --primary: #701e45;
     --accent: #fff9fc;
     --gray: #4d4f5c;
-    --font: lato;
+    --font: "Lato";
 }
 
 html {
@@ -30,7 +30,8 @@ body {
     width: 100%;
     height: 100%;
     position: fixed;
-    background-image: url(/images/background.png);
+    /* !Always consider using relative paths */
+    background-image: url(./images/background.png);
     background-repeat: no-repeat;
     margin: 0;
     background-size: cover;
@@ -105,7 +106,7 @@ body {
 
 .content .paragraph {
     color: var(--gray);
-    font-family: var(--font);
+    /* font-family: var(--font); */ /* !No need to this rule, as it's already included in the global * selector */
     font-size: 18px;
     margin: 20px;
     right: 300px;
